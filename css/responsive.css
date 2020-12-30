@@ -1,0 +1,412 @@
+@charset "utf-8";
+
+/*
+*
+*	html-coding style /responsive(max-width: 1024px)
+*
+*/
+
+/*----------------
+    header
+----------------*/
+
+header {
+    margin-bottom: 0;
+}
+
+/* 改行を追加 */
+.h-info-label-title-sub::before {
+	content: "\A" ;
+	white-space: pre ;
+}
+
+/*----------------
+    mainvisual
+----------------*/
+
+.m-mainvisual{
+    max-width: 100%;
+    width: 100%;
+    margin:0 ;
+    top:0 ;
+}
+
+.m-mainvisual-image img{
+    width: 100%;
+    max-width: 100%;  
+    text-align: center;
+    object-fit: cover;
+}
+
+.m-mainvisual h2 { 
+    color: #1466a8;   
+    font-size: 2rem;
+    line-height: 1.2;
+    text-indent: 0;
+    padding-left: 0;
+    font-weight: normal; 
+    position: absolute;
+    text-indent: -1em;
+    padding-left: 2em;    
+    top: 30%;
+    left: 35%;
+    transform: translate(-50%,0);
+    word-spacing: -10px;/* スペースなくす */
+}
+
+.h2-salon,
+.h2-from{
+    visibility:visible; 
+    font-size: 2rem;
+    line-height: 1.2;
+    color: #1466a8; 
+}
+
+.m-mainvisual h2::after{
+    top:57px;
+    left:65px;
+    width: 55px;
+}
+
+.m-mainvisual-text{    
+    font-weight:normal; 
+    position: absolute;
+    background-color: black;
+    opacity: 0.7;
+    top: 90%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%); 
+    font-size: 0.8rem; 
+    width: 100%; 
+}
+.m-mainvisual-text-p{
+    color: #fff;
+    margin: 10px 10%;
+    max-width: 600px; 
+}
+
+/*----------------
+    News
+----------------*/
+.m-news-title{
+    display: none;
+}
+
+.m-news-item-title{
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+.m-news-item-text{
+    line-height: 1.5;
+    font-size: 0.8rem;
+}
+
+.m-news{
+    margin-top: 10px;
+}
+
+.m-news-item{
+    width: 48%;
+    border: none;
+    height: 20%;
+}
+
+.m-news-item:nth-last-child(2) {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.m-news-more{
+    background-color: #1466a8;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.m-news-more a{
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.m-news-more::after{	
+    content: '＞';
+    color: #fff;
+
+}
+
+
+/*----------------
+    insta
+----------------*/
+.m-insta{
+    top: 0;
+    left:0;
+    height: 260px;
+}
+
+.m-insta-frame{
+    position: relative;
+    width:100%;
+}
+
+.m-insta-img::after{
+    width:100%;
+}
+
+.m-insta-title{
+    width:100%;
+}
+
+.m-insta-more{
+    display: none;
+}
+
+/*----------------
+    About US 
+----------------*/
+.m-about-container{
+    display: block;
+    margin-top:20px ;
+}
+
+.m-about-info{
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.m-about-info p, 
+.m-about-profile p,
+.m-about-profile-skill-title,
+.m-about-profile-skill-br{
+    font-size: 1.1rem;
+    line-height:2;
+}
+
+.m-about-profile-skill{
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.m-about-img-label{
+    transform: translateY(360px) translateX(50%);
+}
+
+.m-about-img-label-kana{
+    margin-left: 0;
+    font-weight: normal;
+}
+.m-about-img-label-post{
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+.m-about-img{
+    text-align: center;
+}
+@media screen and ( max-width: 700px ) {
+
+    .m-about-img-label-kana{
+        color: #fff;
+    }
+    .m-about-img-label-post{
+        color: #fff;
+    }
+}
+
+.m-about-img-label h2{
+    color: #1466a8;   
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: normal;        
+}
+
+/* 改行を追加 */
+.m-about-profile-skill-br::before{
+	content: "\A" ;
+	white-space: pre ;
+}
+
+.m-blog-header-img-small,
+.m-about-header-img-small{
+    display: block;
+    width: 50px;
+    height: 200px;
+    object-fit: cover;
+    object-position:50% 50%;
+}
+
+.m-blog-header-img,
+.m-about-header-img{
+    display: none;
+}
+
+@media screen and ( max-width: 1000px ) {
+
+
+   
+    /*----------------
+        blog-category 
+    ----------------*/
+
+    .m-blog-item{
+        width: 100%;
+        border-bottom: 1px solid #ededed;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .m-blog-category-title{
+        font-size: 1.7rem;
+        margin-top: 10px;
+    }
+
+    .m-blog-item-title{
+        font-size: 1.2rem;
+        line-height: 1.8;
+    }
+
+    .m-blog-item-text{
+        display: none;
+    }        
+    .m-blog-item-date{
+        font-size: 1rem;
+    }
+
+    .m-blog-item-price{
+        margin-top: 10px;
+        font-size: 1.2rem;
+    }
+
+    /* 改行を追加 */
+    .m-blog-item-title-sub::before {
+        content: "\A" ;
+        white-space: pre ;
+    }
+
+    /* 区切り線を削除 */
+    .m-blog-category-container{
+        border-bottom: none;
+    }
+
+    .m-blog-category-first::after{
+        display: none;
+    }
+
+    .m-blog-category-second::before{
+        display: none;
+    }
+
+    /* 全て表示 */
+    .m-blog-more{
+        margin-left: auto;
+        margin-right: auto;
+        width: 150px;
+    }
+
+    .m-blog-more a{
+        font-size: 1.3rem;
+    }
+
+    
+
+    .ft-main {
+        position: static;
+    }
+    .ft-img{
+        position: relative;
+    }
+
+    .ft-nav {
+        position: static;
+        top: 0;
+        left: 0; 
+        transform:  translateX(0); 
+        display: block;
+    }
+
+    
+    .ft-nav li a {
+        color: #595959;
+        font-weight: normal;
+        padding: 5px 0;
+        font-size: 1.1rem;
+    }
+
+    .ft-nav-sub-info-list-left{
+        float: none;
+        width: 100%;
+    }
+
+    .ft-nav-sub-contact,
+    .ft-nav-sub-info,
+    .ft-nav-sub-archive,
+    .ft-nav-sub-sns,
+    .ft-nav-sub-links{
+        width: 100%;  
+        margin-top: 30px;
+    }
+
+    .ft-nav-sub-links{
+        margin-bottom: 30px;
+    }
+
+
+    /* アイコン */
+    .ft-nav-item a::before{    
+        background:#595959;
+        width: 3px;
+        height: 3px;
+        margin-right:3px ;  
+    }
+
+    h4{
+        font-size: 1.4rem;
+    }
+
+    .ft-nav-sub-contact::before,
+    .ft-nav-sub-info::before,
+    .ft-nav-sub-archive::before,
+    .ft-nav-sub-sns::before,
+    .ft-nav-sub-links::before{
+        content:"";
+        background-color:  #ededed;
+        width:110%;
+        height:1px;
+        
+        position:absolute;
+        transform: translateX(-5%) translateY(-15px); 
+    }
+
+    .ft-nav-item-email a::before,
+    .ft-nav-item-tel a::before,
+    .ft-nav-item-instagram a::before{
+        color: #ededed;
+    }
+
+    .ft-nav-item-tel a::before{
+        border: 2px solid #ededed;
+        padding: 6px;
+        top: 3px;    
+    }
+
+    .ft-img{
+        height: 300px;
+    }
+
+    .ft-main img {
+        height: 100%;
+        object-fit: cover;
+        object-position:90% 70%;
+    }
+
+    .ft-copy{
+        top: 75%;
+        width: 100%;
+        height: 10%;
+        font-size: 0.8rem;
+    }
+
+
+}
